@@ -11,9 +11,9 @@ title: Hoa Nguyen
 
 I'm a first-year PhD student in the Department of Computer Science at UC Davis.
 I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector scatter/gather architectures.
-Quantum error correction codes are also part of my study.
+I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
-I received my Bachelor's degree from UC Davis, where I worked for 2 years as a software engineer.
+I received my Bachelor's degree from UC Davis, where I worked for 2 years as a gem5 software engineer.
 
 ## Research
 
@@ -46,4 +46,5 @@ I strongly believe that engagement in a topic comes from understanding the natur
 ## Other Projects
 
 I ocassionally solve problems at [https://projecteuler.net/](https://projecteuler.net/) and [https://rosalind.info/](https://rosalind.info/).
+I like solving problems with geometric interpretations.
 

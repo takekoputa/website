@@ -18,3 +18,21 @@ h1, h2, h3, h4, h5
     font-weight: bold;
     color: #c21071;
 }
+
+ul.navigation-bar
+{
+    display: inline-block;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 20px;
+}
+ul.navigation-bar > li
+{
+    display: inline;
+    margin-right: 1em;
+}
+ul.navigation-bar > li > a:visited
+{
+    color: #854E41;
+}

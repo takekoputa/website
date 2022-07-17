@@ -1,0 +1,9 @@
+li.navigation-bar-about
+{
+    font-weight: bold;
+}
+
+li.navigation-bar-about > a
+{
+    text-decoration: none;
+}
