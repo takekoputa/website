@@ -30,9 +30,9 @@ I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/dav
 
 ## Teaching
 
-I'd like teaching from a practical perspective.
 I strongly believe that engagement in a topic comes from understanding the nature of the problem, as well as the capability of using tools (e.g. software, and abstraction) for solving problems.
 
+- Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis, Winter 2023.
 - Bootcamp Instructor, gem5 Bootcamp, UC Davis, Summer 2022.
 - Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis, Winter 2022.
 - Teaching Assistant for Optimization (MAT 168), Department of Mathematics, UC Davis, Spring 2019.
@@ -42,6 +42,7 @@ I strongly believe that engagement in a topic comes from understanding the natur
 
 - [gem5](https://gem5-review.googlesource.com/q/owner:hoanguyen%2540ucdavis.edu)
 - [SageMath](https://github.com/sagemath/sage/commits?author=takekoputa)
+- [qemu](https://github.com/qemu/qemu)
 
 ## Other Projects
 
