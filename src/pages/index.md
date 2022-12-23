@@ -9,7 +9,7 @@ title: Hoa Nguyen
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a first-year PhD student in the Department of Computer Science at UC Davis.
+I'm a second-year PhD student in the Department of Computer Science at UC Davis.
 I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector scatter/gather architectures.
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
@@ -19,7 +19,7 @@ I received my Bachelor's degree from UC Davis, where I worked for 2 years as a g
 
 My research involves,
 
-- Studying the implications of vector scatter/gather instructions on performance.
+- Studying the implications of irregular memory accesses.
 - Working on gem5's RISC-V Vector instructions implementation.
 - Maintaining disk images and Linux kernels for gem5 full-system simulations.
 - gem5 multiple-node full-system simulations using SST.
