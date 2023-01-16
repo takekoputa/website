@@ -19,18 +19,26 @@ I received my Bachelor's degree from UC Davis, where I worked for 2 years as a g
 
 My research involves,
 
-- Studying the implications of irregular memory accesses.
+- Studying the implications of irregular memory accesses on vector architectures.
+- Studying restructuring data blocks on vector architectures.
 - Working on gem5's RISC-V Vector instructions implementation.
 - Maintaining disk images and Linux kernels for gem5 full-system simulations.
-- gem5 multiple-node full-system simulations using SST.
+- Using SST for gem5 multiple-node full-system simulations.
 
 ## Previous Works
 
-I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/davidson/)'s lab in my undergraduate study, during which I co-authored [a SIGKDD paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g6KC_pUAAAAJ&citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C) .
+I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/davidson/)'s lab in my undergraduate study, during which I co-authored [a SIGKDD paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g6KC_pUAAAAJ&citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C).
+
+## Other Projects
+
+- Implementing support for ARM load-link/store-conditional instructions for FlexCPU, an out-of-order CPU model.
+- Implementing RV64IM instructions in Chisel; verifying the correctness using Spike/riscv-isa-sim.
+- Designing a modular write-back multi-way cache system / memory interface in Chisel, allowing having an arbitrary number of cache levels.
+- Synthesizing the DINOCPU designs using OpenROAD.
 
 ## Teaching
 
-I strongly believe that engagement in a topic comes from understanding the nature of the problem, as well as the capability of using tools (e.g. software, and abstraction) for solving problems.
+I strongly believe that engagement in a topic comes from understanding the nature of the problem, as well as the capability of using tools (e.g. software, and abstractions) for solving problems.
 
 - Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis, Winter 2023.
 - Bootcamp Instructor, gem5 Bootcamp, UC Davis, Summer 2022.
