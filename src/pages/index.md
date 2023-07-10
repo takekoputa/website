@@ -9,21 +9,22 @@ title: Hoa Nguyen
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a second-year PhD student in the Department of Computer Science at UC Davis.
+I'm a third-year PhD student in the Department of Computer Science at UC Davis.
 I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector scatter/gather architectures.
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
 I received my Bachelor's degree from UC Davis, where I worked for 2 years as a gem5 software engineer.
+I'm joining AMD as a research intern this summer.
 
 ## Research
 
 My research involves,
 
-- Studying the implications of irregular memory accesses on vector architectures.
+- Studying the performance of irregular memory accesses on vector architectures.
 - Studying restructuring data blocks on vector architectures.
-- Working on gem5's RISC-V Vector instructions implementation.
-- Maintaining disk images and Linux kernels for gem5 full-system simulations.
-- Using SST for gem5 multiple-node full-system simulations.
+- Working on gem5's out-of-order RISC-V Vector instructions execution.
+- Providing disk images and Linux kernels for gem5 full-system simulations.
+- Integrating SST and gem5 for multiple-node full-system simulations.
 
 ## Previous Works
 
@@ -38,13 +39,12 @@ I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/dav
 
 ## Teaching
 
-I strongly believe that engagement in a topic comes from understanding the nature of the problem, as well as the capability of using tools (e.g. software, and abstractions) for solving problems.
+I believe that engagement comes from understanding the nature of the problem, and the capability of using tools (e.g. software, and abstractions) for solving problems.
 
-- Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis, Winter 2023.
-- Bootcamp Instructor, gem5 Bootcamp, UC Davis, Summer 2022.
-- Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis, Winter 2022.
-- Teaching Assistant for Optimization (MAT 168), Department of Mathematics, UC Davis, Spring 2019.
-- Teaching Assistant for Introduction to Abstract Mathematics (MAT 108), Department of Mathematics, UC Davis, Winter 2019.
+- Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis (Winter 2022 & Winter 2023).
+- Bootcamp Instructor, gem5 Bootcamp, UC Davis (Summer 2022).
+- Teaching Assistant for Optimization (MAT 168), Department of Mathematics, UC Davis (Spring 2019).
+- Teaching Assistant for Abstract Mathematics (MAT 108), Department of Mathematics, UC Davis (Winter 2019).
 
 ## Open-source Contributions
 
@@ -57,3 +57,4 @@ I strongly believe that engagement in a topic comes from understanding the natur
 I ocassionally solve problems at [https://projecteuler.net/](https://projecteuler.net/) and [https://rosalind.info/](https://rosalind.info/).
 I like solving problems with geometric interpretations.
 
+---
