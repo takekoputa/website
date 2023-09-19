@@ -14,7 +14,8 @@ I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
 I received my Bachelor's degree from UC Davis, where I worked for 2 years as a gem5 software engineer.
-I'm joining AMD as a research intern this summer.
+
+I'm joining AMD as a research intern this summer/autumn.
 
 ## Research
 
