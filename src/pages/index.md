@@ -5,7 +5,7 @@ title: Hoa Nguyen
 # Hi, I'm Hoa Nguyen.
 
 **Email:** hoanguyen@ucdavis.edu\
-**GitHub:** [https://github.com/takekoputa](https://github.com/takekoputa)\
+**GitHub:** [https://github.com/hnpl](https://github.com/hnpl)\
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
@@ -35,23 +35,24 @@ I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/dav
 
 - Implementing support for ARM load-link/store-conditional instructions for FlexCPU, an out-of-order CPU model.
 - Implementing RV64IM instructions in Chisel; verifying the correctness using Spike/riscv-isa-sim.
-- Designing a modular write-back multi-way cache system / memory interface in Chisel, allowing having an arbitrary number of cache levels.
+- Designing a modular write-back multi-way cache system and memory interface in Chisel allowing having an arbitrary number of cache levels.
 - Synthesizing the DINOCPU designs using OpenROAD.
 
 ## Teaching
 
 I believe that engagement comes from understanding the nature of the problem, and the capability of using tools (e.g. software, and abstractions) for solving problems.
 
-- Teaching Assistant for Computer Architectures (ECS 154B/ECS 201A), Department of Computer Science, UC Davis (Winter 2022 & Winter 2023).
 - Bootcamp Instructor, gem5 Bootcamp, UC Davis (Summer 2022).
-- Teaching Assistant for Optimization (MAT 168), Department of Mathematics, UC Davis (Spring 2019).
-- Teaching Assistant for Abstract Mathematics (MAT 108), Department of Mathematics, UC Davis (Winter 2019).
+- Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC Davis (Winter 2022 & 2023).
+- Teaching Assistant, Optimization (MAT 168), UC Davis (Spring 2019).
+- Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter 2019).
 
 ## Open-source Contributions
 
-- [gem5](https://gem5-review.googlesource.com/q/owner:hoanguyen%2540ucdavis.edu)
-- [SageMath](https://github.com/sagemath/sage/commits?author=takekoputa)
+- [gem5](https://github.com/gem5/gem5)
+- [SageMath](https://github.com/sagemath/sage/)
 - [qemu](https://github.com/qemu/qemu)
+- [OpenSBI](https://github.com/riscv-software-src/opensbi)
 
 ## Other Projects
 
