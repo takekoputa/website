@@ -15,7 +15,7 @@ I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?
 
 I received my Bachelor's degree from UC Davis, where I worked for 2 years as a gem5 software engineer.
 
-I'm joining AMD as a research intern this summer/autumn.
+I'm joining AMD as a research intern this summer/autumn/winter.
 
 ## Research
 
