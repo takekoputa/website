@@ -10,7 +10,7 @@ title: Hoa Nguyen
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
 I'm a third-year PhD student in the Department of Computer Science at UC Davis.
-I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector scatter/gather acceleration via hardware/software co-design.
+I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-architecture-based acceleration via hardware/software co-design.
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
 I received my Bachelor's degree from UC Davis, where I worked for 3+ years as a gem5 software engineer.
@@ -23,6 +23,7 @@ During my PhD, I interned for 9 months at AMD Research, where I modeled a new ha
 
 My research work involves,
 
+- Studying the enablement of using vector architectures.
 - Studying the performance of irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
 - Enabling long vector architectures by reorganizing the cache system and address translation process.
 - Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA) to support new hardware organizations.
@@ -49,7 +50,7 @@ I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/dav
 
 ## Teaching
 
-I believe that engagement comes from understanding the nature of the problem, and the capability of using tools (e.g. software, and abstractions) for solving problems.
+I strongly believe that student engagement comes from understanding the nature of the problem, and from the [fluency](https://nautil.us/how-i-rewired-my-brain-to-become-fluent-in-math-235085/) of using tools (e.g. using software, using learned facts, and using learned abstractions) for problem solving.
 
 - Bootcamp Instructor, gem5 Bootcamp, UC Davis (Summer 2022).
 - Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC Davis (Winter 2022 & 2023).
