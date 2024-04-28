@@ -10,7 +10,7 @@ title: Hoa Nguyen
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
 I'm a third-year PhD student in the Department of Computer Science at UC Davis.
-I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-architecture-based acceleration via hardware/software co-design.
+I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on enabling vector-architecture-based acceleration via hardware/software co-design.
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
 I received my Bachelor's degree from UC Davis, where I worked for 3+ years as a gem5 software engineer.
@@ -21,9 +21,9 @@ During my PhD, I interned for 9 months at AMD Research, where I modeled a new ha
 
 ## Research
 
-My research work involves,
+My research work involves the intertwine of **vector architectures**, **irregular memory access**,  **accelerator design**, and **simulation**.
 
-- Studying the enablement of using vector architectures.
+- Studying a new way of adopting vector architectures.
 - Studying the performance of irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
 - Enabling long vector architectures by reorganizing the cache system and address translation process.
 - Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA) to support new hardware organizations.
