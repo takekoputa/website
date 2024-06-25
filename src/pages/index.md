@@ -17,13 +17,14 @@ I received my Bachelor's degree from UC Davis, where I worked for 3+ years as a 
 
 During my PhD, I interned for 9 months at AMD Research, where I modeled a new hardware component in gem5/QEMU and developed the software stack for the new hardware.
 
+I'll be at Google for an internship this summer!
+
 ---
 
 ## Research
 
-My research work involves the intertwine of **vector architectures**, **irregular memory access**,  **accelerator design**, and **simulation**.
+My research work involves the intertwine of **vector architectures**,  **accelerator design**, and **simulator design**.
 
-- Studying a new way of adopting vector architectures.
 - Studying the performance of irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
 - Enabling long vector architectures by reorganizing the cache system and address translation process.
 - Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA) to support new hardware organizations.

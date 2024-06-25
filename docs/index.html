@@ -12,7 +12,6 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/about.css" />
@@ -40,86 +39,43 @@
 --->
 <h1 id="hi-im-hoa-nguyen.">Hi, I’m Hoa Nguyen.</h1>
 <p><strong>Email:</strong> hoanguyen@ucdavis.edu<br />
-<strong>GitHub:</strong> <a
-href="https://github.com/hnpl">https://github.com/hnpl</a><br />
-<strong>LinkedIn:</strong> <a
-href="https://www.linkedin.com/in/hnpl">https://www.linkedin.com/in/hnpl</a><br />
-<strong>GoogleScholar:</strong> <a
-href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">https://scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
-<p>I’m a third-year PhD student in the Department of Computer Science at
-UC Davis. I’m working with <a
-href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor
-Jason Lowe-Power</a> on enabling vector-architecture-based acceleration
-via hardware/software co-design. I also work with <a
-href="https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view">Professor Isaac
-Kim</a> on quantum architectures.</p>
-<p>I received my Bachelor’s degree from UC Davis, where I worked for 3+
-years as a gem5 software engineer.</p>
-<p>During my PhD, I interned for 9 months at AMD Research, where I
-modeled a new hardware component in gem5/QEMU and developed the software
-stack for the new hardware.</p>
+<strong>GitHub:</strong> <a href="https://github.com/hnpl">https://github.com/hnpl</a><br />
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hnpl">https://www.linkedin.com/in/hnpl</a><br />
+<strong>GoogleScholar:</strong> <a href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">https://scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
+<p>I’m a third-year PhD student in the Department of Computer Science at UC Davis. I’m working with <a href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor Jason Lowe-Power</a> on enabling vector-architecture-based acceleration via hardware/software co-design. I also work with <a href="https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view">Professor Isaac Kim</a> on quantum architectures.</p>
+<p>I received my Bachelor’s degree from UC Davis, where I worked for 3+ years as a gem5 software engineer.</p>
+<p>During my PhD, I interned for 9 months at AMD Research, where I modeled a new hardware component in gem5/QEMU and developed the software stack for the new hardware.</p>
+<p>I’ll be at Google for an internship this summer!</p>
 <hr />
 <h2 id="research">Research</h2>
-<p>My research work involves the intertwine of <strong>vector
-architectures</strong>, <strong>irregular memory access</strong>,
-<strong>accelerator design</strong>, and
-<strong>simulation</strong>.</p>
+<p>My research work involves the intertwine of <strong>vector architectures</strong>, <strong>accelerator design</strong>, and <strong>simulator design</strong>.</p>
 <ul>
-<li>Studying a new way of adopting vector architectures.</li>
-<li>Studying the performance of irregular memory accesses of
-HPC/graph-analytics/database applications on vector architectures.</li>
-<li>Enabling long vector architectures by reorganizing the cache system
-and address translation process.</li>
-<li>Modifying various parts of a hardware/software stack (e.g., kernel
-driver, compiler, ISA) to support new hardware organizations.</li>
-<li>Enabling gem5 RISC-V full-system simulation with the newer RISC-V
-software stack.</li>
-<li>Enabling multiple-node full-system simulations via <a
-href="https://www.gem5.org/">gem5</a>+<a
-href="https://sst-simulator.org/">SST</a> integration.</li>
+<li>Studying the performance of irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.</li>
+<li>Enabling long vector architectures by reorganizing the cache system and address translation process.</li>
+<li>Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA) to support new hardware organizations.</li>
+<li>Enabling gem5 RISC-V full-system simulation with the newer RISC-V software stack.</li>
+<li>Enabling multiple-node full-system simulations via <a href="https://www.gem5.org/">gem5</a>+<a href="https://sst-simulator.org/">SST</a> integration.</li>
 </ul>
 <hr />
 <h2 id="previous-works">Previous Works</h2>
-<p>I worked at <a
-href="https://faculty.engineering.ucdavis.edu/davidson/">Professor Ian
-Davidson</a>’s lab in my undergraduate study, during which I co-authored
-<a
-href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=g6KC_pUAAAAJ&amp;citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C">a
-SIGKDD paper</a>.</p>
+<p>I worked at <a href="https://faculty.engineering.ucdavis.edu/davidson/">Professor Ian Davidson</a>’s lab in my undergraduate study, during which I co-authored <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=g6KC_pUAAAAJ&amp;citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C">a SIGKDD paper</a>.</p>
 <hr />
 <h2 id="previous-projects">Previous Projects</h2>
 <ul>
-<li>Working on gem5’s out-of-order RISC-V Vector instructions
-execution.</li>
-<li>Implementing support for ARM load-link/store-conditional
-instructions for <a
-href="https://github.com/darchr/gem5/tree/flexcpu">FlexCPU</a>, an
-out-of-order CPU model.</li>
-<li>Implementing RV64IM in Chisel; utilizing <a
-href="https://github.com/riscv-software-src/riscv-isa-sim">spike/riscv-isa-sim</a>
-for verification.</li>
-<li>Designing a modular write-back multi-way cache system and memory
-interface in Chisel allowing having an arbitrary number of cache
-levels.</li>
-<li>Synthesizing the <a
-href="https://github.com/jlpteaching/dinocpu">DINOCPU</a> designs using
-<a href="https://theopenroadproject.org/">OpenROAD</a>.</li>
+<li>Working on gem5’s out-of-order RISC-V Vector instructions execution.</li>
+<li>Implementing support for ARM load-link/store-conditional instructions for <a href="https://github.com/darchr/gem5/tree/flexcpu">FlexCPU</a>, an out-of-order CPU model.</li>
+<li>Implementing RV64IM in Chisel; utilizing <a href="https://github.com/riscv-software-src/riscv-isa-sim">spike/riscv-isa-sim</a> for verification.</li>
+<li>Designing a modular write-back multi-way cache system and memory interface in Chisel allowing having an arbitrary number of cache levels.</li>
+<li>Synthesizing the <a href="https://github.com/jlpteaching/dinocpu">DINOCPU</a> designs using <a href="https://theopenroadproject.org/">OpenROAD</a>.</li>
 </ul>
 <hr />
 <h2 id="teaching">Teaching</h2>
-<p>I strongly believe that student engagement comes from understanding
-the nature of the problem, and from the <a
-href="https://nautil.us/how-i-rewired-my-brain-to-become-fluent-in-math-235085/">fluency</a>
-of using tools (e.g. using software, using learned facts, and using
-learned abstractions) for problem solving.</p>
+<p>I strongly believe that student engagement comes from understanding the nature of the problem, and from the <a href="https://nautil.us/how-i-rewired-my-brain-to-become-fluent-in-math-235085/">fluency</a> of using tools (e.g. using software, using learned facts, and using learned abstractions) for problem solving.</p>
 <ul>
 <li>Bootcamp Instructor, gem5 Bootcamp, UC Davis (Summer 2022).</li>
-<li>Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC
-Davis (Winter 2022 &amp; 2023).</li>
-<li>Teaching Assistant, Optimization (MAT 168), UC Davis (Spring
-2019).</li>
-<li>Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter
-2019).</li>
+<li>Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC Davis (Winter 2022 &amp; 2023).</li>
+<li>Teaching Assistant, Optimization (MAT 168), UC Davis (Spring 2019).</li>
+<li>Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter 2019).</li>
 </ul>
 <hr />
 <h2 id="open-source-contributions">Open-source Contributions</h2>
@@ -127,16 +83,12 @@ Davis (Winter 2022 &amp; 2023).</li>
 <li><a href="https://github.com/gem5/gem5">gem5</a></li>
 <li><a href="https://github.com/sagemath/sage/">SageMath</a></li>
 <li><a href="https://github.com/qemu/qemu">QEMU</a></li>
-<li><a
-href="https://github.com/riscv-software-src/opensbi">OpenSBI</a></li>
+<li><a href="https://github.com/riscv-software-src/opensbi">OpenSBI</a></li>
 </ul>
 <hr />
 <h2 id="other-projects">Other Projects</h2>
-<p>I ocassionally solve problems at <a
-href="https://projecteuler.net/">https://projecteuler.net/</a> and <a
-href="https://rosalind.info/">https://rosalind.info/</a>. I like solving
-problems with geometric interpretations.</p>
+<p>I ocassionally solve problems at <a href="https://projecteuler.net/">https://projecteuler.net/</a> and <a href="https://rosalind.info/">https://rosalind.info/</a>. I like solving problems with geometric interpretations.</p>
 <hr />
-Updated: April 27th, 2024
+Updated: June 26th, 2024
 </body>
 </html>
