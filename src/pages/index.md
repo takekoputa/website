@@ -9,27 +9,26 @@ title: Hoa Nguyen
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a third-year PhD student in the Department of Computer Science at UC Davis.
-I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on enabling vector-architecture-based acceleration via hardware/software co-design.
+I'm a fourth-year PhD student in the Department of Computer Science at UC Davis.
+I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-based acceleration via hardware/software co-design.
 I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
 I received my Bachelor's degree from UC Davis, where I worked for 3+ years as a gem5 software engineer.
 
-During my PhD, I interned for 9 months at AMD Research, where I modeled a new hardware component in gem5/QEMU and developed the software stack for the new hardware.
-
-I'll be at Google for an internship this summer!
+During my PhD, I interned for 9 months at AMD Research, where I was responsible for developing the software stack and modeling the performance of an experimental hardware component in gem5.
+I was also at Google for 3 months, where I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls).
 
 ---
 
 ## Research
 
-My research work involves the intertwine of **vector architectures**,  **accelerator design**, and **simulator design**.
+My research work involves using the right tools for modeling hardware and writing software for new hardware, with a focus on designing programmer-friendly **vector architectures** and **accelerator designs**.
 
-- Studying the performance of irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
-- Enabling long vector architectures by reorganizing the cache system and address translation process.
-- Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA) to support new hardware organizations.
-- Enabling gem5 RISC-V full-system simulation with the newer RISC-V software stack.
-- Enabling multiple-node full-system simulations via [gem5](https://www.gem5.org/)+[SST](https://sst-simulator.org/) integration.
+- **[Vector]** Studying vector-based accelerator designs.
+- **[Accelerator]** Studying accelerator design for irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
+- **[Tools]** Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA, hardware simulator) to support new hardware organizations.
+- **[Tools]** Enabling multiple-node full-system simulations via [gem5](https://www.gem5.org/)+[SST](https://sst-simulator.org/) integration.
+- **[Miscs]** Exotic architectures.
 
 ---
 
@@ -41,6 +40,7 @@ I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/dav
 
 ## Previous Projects
 
+- Enabling gem5 RISC-V full-system simulation with the newer RISC-V software stack.
 - Working on gem5's out-of-order RISC-V Vector instructions execution.
 - Implementing support for ARM load-link/store-conditional instructions for [FlexCPU](https://github.com/darchr/gem5/tree/flexcpu), an out-of-order CPU model.
 - Implementing RV64IM in Chisel; utilizing [spike/riscv-isa-sim](https://github.com/riscv-software-src/riscv-isa-sim) for verification.
@@ -66,6 +66,8 @@ I strongly believe that student engagement comes from understanding the nature o
 - [SageMath](https://github.com/sagemath/sage/)
 - [QEMU](https://github.com/qemu/qemu)
 - [OpenSBI](https://github.com/riscv-software-src/opensbi)
+- [XLS](https://github.com/google/xls)
+- [Yosys](https://github.com/YosysHQ/yosys)
 
 ---
 
