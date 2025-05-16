@@ -11,11 +11,10 @@ title: Hoa Nguyen
 
 I'm a fourth-year PhD student in the Department of Computer Science at UC Davis.
 I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-based acceleration via hardware/software co-design.
-I also work with [Professor Isaac Kim](https://hackmd.io/39K7_jYrS3K3k4Jbn66iHQ?view) on quantum architectures.
 
-I received my Bachelor's degree from UC Davis, where I worked for 3+ years as a gem5 software engineer.
+I received my Bachelor's degree from UC Davis, where I worked for 4+ years as a gem5 software engineer.
 
-During my PhD, I interned for 9 months at AMD Research, where I was responsible for developing the software stack and modeling the performance of an experimental hardware component in gem5.
+During my PhD, I interned for 9 months at AMD Research, where I was responsible for developing the software stack and the gem5-based simulation framework for a last-level cache prefetcher (the Pickle prefetcher).
 I was also at Google for 3 months, where I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls).
 
 ---
@@ -27,8 +26,6 @@ My research work involves using the right tools for modeling hardware and writin
 - **[Vector]** Studying vector-based accelerator designs.
 - **[Accelerator]** Studying accelerator design for irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
 - **[Tools]** Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA, hardware simulator) to support new hardware organizations.
-- **[Tools]** Enabling multiple-node full-system simulations via [gem5](https://www.gem5.org/)+[SST](https://sst-simulator.org/) integration.
-- **[Miscs]** Exotic architectures.
 
 ---
 
@@ -63,6 +60,7 @@ I strongly believe that student engagement comes from understanding the nature o
 ## Open-source Contributions
 
 - [gem5](https://github.com/gem5/gem5)
+- [SST](https://github.com/sstsimulator)
 - [SageMath](https://github.com/sagemath/sage/)
 - [QEMU](https://github.com/qemu/qemu)
 - [OpenSBI](https://github.com/riscv-software-src/opensbi)
