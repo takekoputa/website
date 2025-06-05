@@ -8,14 +8,22 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../css/main.css" />
-  <link rel="stylesheet" href="../css/about.css" />
+  <link rel="stylesheet" href="../css/work.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -26,18 +34,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
-<!---
 <body>
     <div class="navigation-bar-div">
         <ul class="navigation-bar">
-            <li class="navigation-bar-about"><a href="">About</a></li>
-            <li class="navigation-bar-posts"><a href="">Posts</a></li>
-            <li class="navigation-bar-cv"><a href="">CV</a></li>
+            <li class="navigation-bar-about"><a href="/index.html">About</a></li>
+            <!---<li class="navigation-bar-posts"><a href="">Posts</a></li>--->
+            <li class="navigation-bar-cv"><a href="/work/index.html">CV</a></li>
         </ul>
     </div>
 </body>
----
---->
 <h1 id="hi-im-hoa-nguyen.">Hi, I’m Hoa Nguyen.</h1>
 <p><strong>Email:</strong> hoanguyen@ucdavis.edu<br />
 <strong>GitHub:</strong> <a
@@ -51,14 +56,16 @@ at UC Davis. I’m working with <a
 href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor
 Jason Lowe-Power</a> on vector-based acceleration via hardware/software
 co-design.</p>
-<p>I received my Bachelor’s degree from UC Davis, where I worked for 4+
-years as a gem5 software engineer.</p>
+<p>I received my Bachelor’s degree from UC Davis, where I worked for
+over 5 years as a gem5 software engineer.</p>
 <p>During my PhD, I interned for 9 months at AMD Research, where I was
 responsible for developing the software stack and the gem5-based
 simulation framework for a last-level cache prefetcher (the Pickle
 prefetcher). I was also at Google for 3 months, where I built a pre-RTL
 area estimation model for the <a
 href="https://github.com/google/xls">XLS project</a>.</p>
+<p>This summer, I’ll be at Google Cloud as a software engineer
+intern.</p>
 <hr />
 <h2 id="research">Research</h2>
 <p>My research work involves using the right tools for modeling hardware
@@ -66,14 +73,15 @@ and writing software for new hardware, with a focus on designing
 programmer-friendly <strong>vector architectures</strong> and
 <strong>accelerator designs</strong>.</p>
 <ul>
-<li><strong>[Vector]</strong> Studying vector-based accelerator
-designs.</li>
-<li><strong>[Accelerator]</strong> Studying accelerator design for
-irregular memory accesses of HPC/graph-analytics/database applications
-on vector architectures.</li>
-<li><strong>[Tools]</strong> Modifying various parts of a
-hardware/software stack (e.g., kernel driver, compiler, ISA, hardware
-simulator) to support new hardware organizations.</li>
+<li><strong>[Vector-based accelerators]</strong> Studying vector-based
+accelerator designs.</li>
+<li><strong>[Prefetcher]</strong> Designing Pickle prefetcher, a
+last-level cache prefetcher supporting irregular memory accesses in
+network-on-chip architectures.</li>
+<li><strong>[Tools]</strong> Developing a gem5 framework for studying
+in-cache accelerators, modifying various parts of a hardware/software
+stack (e.g., kernel driver, compiler, ISA, cache coherence protocol) to
+support the accelerators.</li>
 </ul>
 <hr />
 <h2 id="previous-works">Previous Works</h2>
@@ -133,12 +141,6 @@ href="https://github.com/riscv-software-src/opensbi">OpenSBI</a></li>
 <li><a href="https://github.com/YosysHQ/yosys">Yosys</a></li>
 </ul>
 <hr />
-<h2 id="other-projects">Other Projects</h2>
-<p>I ocassionally solve problems at <a
-href="https://projecteuler.net/">https://projecteuler.net/</a> and <a
-href="https://rosalind.info/">https://rosalind.info/</a>. I like solving
-problems with geometric interpretations.</p>
-<hr />
-Updated: May 16th, 2025
+Updated: June 5th, 2025
 </body>
 </html>

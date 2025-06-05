@@ -1,9 +1,9 @@
-li.navigation-bar-about
+li.navigation-bar-cv
 {
     font-weight: bolder;
 }
 
-li.navigation-bar-about > a
+li.navigation-bar-cv > a
 {
     background-color: #A7D477;
 }

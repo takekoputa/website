@@ -32,7 +32,8 @@ ul.navigation-bar > li
     display: inline;
     margin-right: 1em;
 }
-ul.navigation-bar > li > a:visited
+ul.navigation-bar > li > a
 {
     color: #854e41;
+    text-decoration: none;
 }

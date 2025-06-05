@@ -1,9 +1,9 @@
 li.navigation-bar-about
 {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 li.navigation-bar-about > a
 {
-    text-decoration: none;
+    background-color: #A7D477;
 }

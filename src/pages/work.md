@@ -12,10 +12,12 @@ title: Hoa Nguyen
 I'm a fourth-year PhD student in the Department of Computer Science at UC Davis.
 I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-based acceleration via hardware/software co-design.
 
-I received my Bachelor's degree from UC Davis, where I worked for 4+ years as a gem5 software engineer.
+I received my Bachelor's degree from UC Davis, where I worked for over 5 years as a gem5 software engineer.
 
 During my PhD, I interned for 9 months at AMD Research, where I was responsible for developing the software stack and the gem5-based simulation framework for a last-level cache prefetcher (the Pickle prefetcher).
 I was also at Google for 3 months, where I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls).
+
+This summer, I'll be at Google Cloud as a software engineer intern.
 
 ---
 
@@ -23,9 +25,9 @@ I was also at Google for 3 months, where I built a pre-RTL area estimation model
 
 My research work involves using the right tools for modeling hardware and writing software for new hardware, with a focus on designing programmer-friendly **vector architectures** and **accelerator designs**.
 
-- **[Vector]** Studying vector-based accelerator designs.
-- **[Accelerator]** Studying accelerator design for irregular memory accesses of HPC/graph-analytics/database applications on vector architectures.
-- **[Tools]** Modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA, hardware simulator) to support new hardware organizations.
+- **[Vector-based accelerators]** Studying vector-based accelerator designs.
+- **[Prefetcher]** Designing Pickle prefetcher, a last-level cache prefetcher supporting irregular memory accesses in network-on-chip architectures.
+- **[Tools]** Developing a gem5 framework for studying in-cache accelerators, modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA, cache coherence protocol) to support the accelerators.
 
 ---
 
@@ -66,12 +68,5 @@ I strongly believe that student engagement comes from understanding the nature o
 - [OpenSBI](https://github.com/riscv-software-src/opensbi)
 - [XLS](https://github.com/google/xls)
 - [Yosys](https://github.com/YosysHQ/yosys)
-
----
-
-## Other Projects
-
-I ocassionally solve problems at [https://projecteuler.net/](https://projecteuler.net/) and [https://rosalind.info/](https://rosalind.info/).
-I like solving problems with geometric interpretations.
 
 ---
