@@ -7,3 +7,8 @@ li.navigation-bar-about > a
 {
     background-color: #A7D477;
 }
+
+img
+{
+    max-width: 44em;
+}
