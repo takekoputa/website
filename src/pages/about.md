@@ -5,7 +5,7 @@ title: Hoa Nguyen
 # Hi, I'm Hoa Nguyen.
 
 I'm a friend of five cats.
-The following is a diagram showing where I stand within the cat hierarchy.
+Here's a diagram showing where I stand within the cat hierarchy.
 
 ![](images/cat_hierarchy.png)
 
