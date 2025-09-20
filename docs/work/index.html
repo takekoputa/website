@@ -51,29 +51,49 @@ href="https://github.com/hnpl">https://github.com/hnpl</a><br />
 href="https://www.linkedin.com/in/hnpl">https://www.linkedin.com/in/hnpl</a><br />
 <strong>GoogleScholar:</strong> <a
 href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">https://scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
-<p>I’m a fifth-year PhD student at UC Davis. I’m working with <a
+<p>I’m a fifth-year PhD student at UC Davis, working with <a
 href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor
-Jason Lowe-Power</a> on making the “should be flexible hardware”
-flexible, such as prefetchers. We focus on the path of leveraging
-reconfigurable technologies situated near the last-level cache to build
-accelerators.</p>
-<p>I worked on the gem5 project at UC Davis for 5 years, and I interned
-at Google and AMD during my PhD.</p>
+Jason Lowe-Power</a> on bringing <strong>flexibility</strong> to
+hardware, making the hardware adaptable to the ever-changing demands of
+modern software systems.</p>
+<p>More specifically, we leverage reconfigurable technologies located
+near the last-level cache (LLC) to build accelerators. I strongly
+believe that, given the vast capacity of LLC in modern CPUs, using
+reconfigurable technologies near LLC is the most viable path towards
+maximizing the computational efficiency to modern systems.</p>
+<p>I have an extensive background of hardware architectures and software
+development. I contribute to the gem5 project, a widely-used hardware
+simulator, at UC Davis for 5 years, and I interned at Google and AMD
+during my PhD.</p>
 <hr />
 <h2 id="research">Research</h2>
 <p>My research work involves using the right tools for modeling hardware
 and writing software for new hardware.</p>
 <ul>
 <li><strong>[Tools]</strong> Developing the Choreographer platform, a
-gem5-based framework for studying in-cache accelerators. We model the
-full high-performance system with out-of-order CPU, a chiplet-based
-network on chip, a fully detailed cache coherence protocol, and the full
-software stack.</li>
+gem5-based framework for studying in-cache accelerators. The framework
+has high-resolution views of both hardware/software stacks.
+<ul>
+<li>This is achieved by modeling the full high-performance system with
+an out-of-order CPU, a chiplet-based network on chip, a fully detailed
+cache coherence protocol (we use gem5’s CHI protocol to model the MOESI
+protocol with L3 victim cache), and the full software stack. We use
+full-system simulations so we do not miss out on the optimization on any
+part of the software stack! [arXiV link pending]</li>
+</ul></li>
 <li><strong>[Prefetcher]</strong> Designing Pickle prefetcher, a
 last-level cache prefetcher accelerating irregular memory accesses in
-network-on-chip architectures.</li>
+network-on-chip (NoC) architectures.
+<ul>
+<li>As the prefetcher is an integral part of the NoC, we are able to
+monitor the traffic pattern between the prefetcher and other parts of
+the NoC. This leads us to derive a lot of metrics for measuring the
+efficiency of the prefetcher in the NoC and provide insights on how to
+further optimize the prefetcher! [arXiV link pending]</li>
+</ul></li>
 <li><strong>[Vector-based accelerators]</strong> Studying
-latency/throughput tradeoffs to build vector-based accelerators.</li>
+latency/throughput tradeoffs to build vector-based accelerators.
+[graduation pending!]</li>
 </ul>
 <hr />
 <h2 id="internships">Internships</h2>
@@ -81,9 +101,10 @@ latency/throughput tradeoffs to build vector-based accelerators.</li>
 <li><strong>[Google]</strong>: I built a pre-RTL area estimation model
 for the <a href="https://github.com/google/xls">XLS project</a> in the
 Summer 2024, and worked on the Borglet’s CPU scheduling problem in the
-Summer 2025.</li>
+Summer 2025. The area model is useful enough for optimizing the area of
+certain designs ;).</li>
 <li><strong>[AMD Research]</strong>: I built the software/hardware stack
-for a last-level cache prefetcher (the Pickle prefetcher) in Summer
+for a last-level cache prefetcher (the Pickle prefetcher) in the Summer
 2023.</li>
 </ul>
 <hr />
@@ -96,10 +117,12 @@ href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;u
 SIGKDD paper</a>.</p>
 <hr />
 <h2 id="previous-projects">Previous Projects</h2>
+<p>As a simulator developer, I did a lot of “zero-to-one” projects,
+i.e., implementing something that does not exist.</p>
 <ul>
-<li>Enabling gem5 RISC-V full-system simulation with the newer RISC-V
-software stack.</li>
-<li>Working on gem5’s out-of-order RISC-V Vector instructions
+<li>Intergrating OpenSBI to gem5 RISC-V full-system simulation, allowing
+gem5 to use OpenSBI as a bootloader to boot the system.</li>
+<li>Designing the gem5’s out-of-order RISC-V Vector instruction
 execution.</li>
 <li>Implementing support for ARM load-link/store-conditional
 instructions for <a
@@ -108,9 +131,9 @@ out-of-order CPU model.</li>
 <li>Implementing RV64IM in Chisel; utilizing <a
 href="https://github.com/riscv-software-src/riscv-isa-sim">spike/riscv-isa-sim</a>
 for verification.</li>
-<li>Designing a modular write-back multi-way cache system and memory
-interface in Chisel allowing having an arbitrary number of cache
-levels.</li>
+<li>Designing a dual-issue pipelined CPU and a 3-level write-back cache
+system for <a href="https://github.com/jlpteaching/dinocpu">DINOCPU</a>
+using Chisel3.</li>
 <li>Synthesizing the <a
 href="https://github.com/jlpteaching/dinocpu">DINOCPU</a> designs using
 <a href="https://theopenroadproject.org/">OpenROAD</a>.</li>
