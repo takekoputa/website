@@ -31,8 +31,8 @@
 <body>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navigation-bar-div">
@@ -51,37 +51,40 @@ href="https://github.com/hnpl">https://github.com/hnpl</a><br />
 href="https://www.linkedin.com/in/hnpl">https://www.linkedin.com/in/hnpl</a><br />
 <strong>GoogleScholar:</strong> <a
 href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">https://scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
-<p>I’m a fourth-year PhD student in the Department of Computer Science
-at UC Davis. I’m working with <a
+<p>I’m a fifth-year PhD student at UC Davis. I’m working with <a
 href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor
-Jason Lowe-Power</a> on vector-based acceleration via hardware/software
-co-design.</p>
-<p>I received my Bachelor’s degree from UC Davis, where I worked for
-over 5 years as a gem5 software engineer.</p>
-<p>During my PhD, I interned for 9 months at AMD Research, where I was
-responsible for developing the software stack and the gem5-based
-simulation framework for a last-level cache prefetcher (the Pickle
-prefetcher). I was also at Google for 3 months, where I built a pre-RTL
-area estimation model for the <a
-href="https://github.com/google/xls">XLS project</a>.</p>
-<p>This summer, I’ll be at Google Cloud as a software engineer
-intern.</p>
+Jason Lowe-Power</a> on making the “should be flexible hardware”
+flexible, such as prefetchers. We focus on the path of leveraging
+reconfigurable technologies situated near the last-level cache to build
+accelerators.</p>
+<p>I worked on the gem5 project at UC Davis for 5 years, and I interned
+at Google and AMD during my PhD.</p>
 <hr />
 <h2 id="research">Research</h2>
 <p>My research work involves using the right tools for modeling hardware
-and writing software for new hardware, with a focus on designing
-programmer-friendly <strong>vector architectures</strong> and
-<strong>accelerator designs</strong>.</p>
+and writing software for new hardware.</p>
 <ul>
-<li><strong>[Vector-based accelerators]</strong> Studying vector-based
-accelerator designs.</li>
+<li><strong>[Tools]</strong> Developing the Choreographer platform, a
+gem5-based framework for studying in-cache accelerators. We model the
+full high-performance system with out-of-order CPU, a chiplet-based
+network on chip, a fully detailed cache coherence protocol, and the full
+software stack.</li>
 <li><strong>[Prefetcher]</strong> Designing Pickle prefetcher, a
-last-level cache prefetcher supporting irregular memory accesses in
+last-level cache prefetcher accelerating irregular memory accesses in
 network-on-chip architectures.</li>
-<li><strong>[Tools]</strong> Developing a gem5 framework for studying
-in-cache accelerators, modifying various parts of a hardware/software
-stack (e.g., kernel driver, compiler, ISA, cache coherence protocol) to
-support the accelerators.</li>
+<li><strong>[Vector-based accelerators]</strong> Studying
+latency/throughput tradeoffs to build vector-based accelerators.</li>
+</ul>
+<hr />
+<h2 id="internships">Internships</h2>
+<ul>
+<li><strong>[Google]</strong>: I built a pre-RTL area estimation model
+for the <a href="https://github.com/google/xls">XLS project</a> in the
+Summer 2024, and worked on the Borglet’s CPU scheduling problem in the
+Summer 2025.</li>
+<li><strong>[AMD Research]</strong>: I built the software/hardware stack
+for a last-level cache prefetcher (the Pickle prefetcher) in Summer
+2023.</li>
 </ul>
 <hr />
 <h2 id="previous-works">Previous Works</h2>
@@ -141,6 +144,6 @@ href="https://github.com/riscv-software-src/opensbi">OpenSBI</a></li>
 <li><a href="https://github.com/YosysHQ/yosys">Yosys</a></li>
 </ul>
 <hr />
-Updated: June 5th, 2025
+Updated: Sept 20th, 2025
 </body>
 </html>

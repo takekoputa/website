@@ -9,25 +9,28 @@ title: Hoa Nguyen
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a fourth-year PhD student in the Department of Computer Science at UC Davis.
-I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on vector-based acceleration via hardware/software co-design.
+I'm a fifth-year PhD student at UC Davis.
+I'm working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on making the "should be flexible hardware" flexible, such as prefetchers.
+We focus on the path of leveraging reconfigurable technologies situated near the last-level cache to build accelerators.
 
-I received my Bachelor's degree from UC Davis, where I worked for over 5 years as a gem5 software engineer.
-
-During my PhD, I interned for 9 months at AMD Research, where I was responsible for developing the software stack and the gem5-based simulation framework for a last-level cache prefetcher (the Pickle prefetcher).
-I was also at Google for 3 months, where I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls).
-
-This summer, I'll be at Google Cloud as a software engineer intern.
+I worked on the gem5 project at UC Davis for 5 years, and I interned at Google and AMD during my PhD.
 
 ---
 
 ## Research
 
-My research work involves using the right tools for modeling hardware and writing software for new hardware, with a focus on designing programmer-friendly **vector architectures** and **accelerator designs**.
+My research work involves using the right tools for modeling hardware and writing software for new hardware.
 
-- **[Vector-based accelerators]** Studying vector-based accelerator designs.
-- **[Prefetcher]** Designing Pickle prefetcher, a last-level cache prefetcher supporting irregular memory accesses in network-on-chip architectures.
-- **[Tools]** Developing a gem5 framework for studying in-cache accelerators, modifying various parts of a hardware/software stack (e.g., kernel driver, compiler, ISA, cache coherence protocol) to support the accelerators.
+- **[Tools]** Developing the Choreographer platform, a gem5-based framework for studying in-cache accelerators. We model the full high-performance system with out-of-order CPU, a chiplet-based network on chip, a fully detailed cache coherence protocol, and the full software stack.
+- **[Prefetcher]** Designing Pickle prefetcher, a last-level cache prefetcher accelerating irregular memory accesses in network-on-chip architectures.
+- **[Vector-based accelerators]** Studying latency/throughput tradeoffs to build vector-based accelerators.
+
+---
+
+## Internships
+
+- **[Google]**: I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls) in the Summer 2024, and worked on the Borglet's CPU scheduling problem in the Summer 2025.
+- **[AMD Research]**: I built the software/hardware stack for a last-level cache prefetcher (the Pickle prefetcher) in Summer 2023.
 
 ---
 
