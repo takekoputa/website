@@ -53,55 +53,83 @@ href="https://www.linkedin.com/in/hnpl">https://www.linkedin.com/in/hnpl</a><br 
 href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">https://scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
 <p>I’m a fifth-year PhD student at UC Davis, working with <a
 href="https://arch.cs.ucdavis.edu/people/jason-lowe-power">Professor
-Jason Lowe-Power</a> on bringing <strong>flexibility</strong> to
-hardware, making the hardware adaptable to the ever-changing demands of
-modern software systems.</p>
-<p>More specifically, we leverage reconfigurable technologies located
-near the last-level cache (LLC) to build accelerators. The
-reconfigurable technologies <strong>integrate hardware construction into
-the software development cycle</strong>, furthering the impact and
-practicality of hardware/software co-design. I strongly believe that,
-given the vast capacity of LLC in modern CPUs, using reconfigurable
-technologies near LLC is the most viable path toward maximizing the
-computational efficiency of modern systems.</p>
-<p>I have an extensive background in hardware architectures and software
-development. I have contributed to the gem5 project, a widely-used
-hardware simulator, at UC Davis for 5 years, and I interned at Google
-and AMD during my PhD.</p>
-<p><span style="color:white">I hope my CV would ever land me an
-impactful research position. Let’s see!</span></p>
+Jason Lowe-Power</a> on rethinking data prefetching through the lens of
+hardware/software co-design, building systems that interweave the
+<strong>flexibility</strong> of software prefetching with the
+<strong>efficiency</strong> of specialized hardware.</p>
+<p>In our paradigm, the software provides prefetch kernels, which
+generate prefetch requests that are handled by the hardware to deliver
+timely prefetches. As the kernels are real code rather than inferred
+patterns, they can prefetch for hash-indexed lookups, predicated
+traversals, and other accesses that have long resisted hardware
+prefetchers, a direction the field’s decades-long focus on pattern
+recognition has left underexplored. <strong>To put it differently: this
+is how a software engineer would build a data prefetcher.</strong></p>
+<p>I have an extensive background in hardware architecture and software
+development. I’ve contributed to <a
+href="https://github.com/gem5/gem5">gem5</a> for 6 years at UC Davis,
+and during my PhD I’ve interned as a software engineer at Google and as
+a researcher at AMD.</p>
+<p>I’ll be returning to Google for another internship in summer
+2026.</p>
 <hr />
 <h2 id="research">Research</h2>
-<p>My research work involves using the right tools for modeling hardware
-and writing software for new hardware.</p>
+<p>My research work involves building the right tools for modeling
+hardware and writing software for new hardware.</p>
 <ul>
-<li><strong>[Tools]</strong> This work is in collaboration with AMD
-Research. I drive the development of the Choreographer platform, a
-gem5-based framework for studying in-cache accelerators. The framework
-provides high-resolution views of both hardware/software stacks, which
-is crucial to evaluate an in-cache accelerator.
+<li><strong>[Pickle Prefetcher]</strong> I drive the development of
+Pickle, a last-level cache prefetcher for irregular memory accesses, in
+collaboration with AMD Research. Instead of inferring patterns, Pickle
+executes programmer-supplied prefetch kernels on programmable compute at
+the LLC, with hardware managing the resulting prefetches. On graph
+analytics workloads, Pickle delivers significant speedups at only 2%
+DRAM traffic overhead.
 <ul>
-<li>This is achieved by modeling the full high-performance system with
-an out-of-order CPU, a chiplet-based network on chip, a fully detailed
-cache coherence protocol (we use gem5’s CHI protocol to model the MOESI
-protocol with L3 victim cache), and the full software stack. We use
-full-system simulations so we also do not miss out on optimizing any
-part of the software stack! [arXiV link pending]</li>
+<li>Preprint: <a href="https://arxiv.org/abs/2511.19973">arXiv</a>; a
+newer version is under review.</li>
+<li>Trivia:
+<ul>
+<li>This project is named after my first cat, Pickle. She loves to play
+fetch, tends to take off before I throw the ball (<em>prefetching</em>),
+and ignores the bad throws (<em>conditional prefetching</em>).</li>
+<li>This <a
+href="https://research.google/pubs/limoncello-prefetchers-for-scale/">paper</a>
+and this <a
+href="https://research.google/pubs/classifying-memory-access-patterns-for-prefetching/">paper</a>
+convinced me that inaccurate prefetches accumulate at scale, and
+focusing on prefetch accuracy and prefetch timeliness is the right
+approach.</li>
 </ul></li>
-<li><strong>[Prefetcher]</strong> This work is in collaboration with AMD
-Research. I drive the development of the Pickle prefetcher, a last-level
-cache prefetcher accelerating irregular memory accesses in
-network-on-chip (NoC) architectures.
-<ul>
-<li>The prefetcher is an integral part of the NoC. We are able to
-monitor the traffic pattern between the prefetcher and other parts of
-the NoC. This leads us to derive a lot of metrics for measuring the
-efficiency of the prefetcher in the NoC and provide insights on how to
-further optimize the prefetcher! [arXiV link pending]</li>
 </ul></li>
-<li><strong>[Vector-based accelerators]</strong> Studying
-latency/throughput tradeoffs to build vector-based accelerators.
-[graduation pending!]</li>
+<li><strong>[Choreographer]</strong> I drive the development of
+Choreographer, a gem5-based framework enabling hardware/software
+co-design for near-cache accelerators, in collaboration with AMD
+Research. Because these accelerators touch every layer of the
+hardware/software stack, evaluating them demands full-system visibility.
+Choreographer provides exactly that: a cluster of out-of-order CPUs, a
+chiplet-based on-chip network with a fully detailed MOESI coherence
+protocol using gem5’s CHI, and the complete software stack, all running
+in full-system simulation.
+<ul>
+<li>Pickle is built on Choreographer. I extend the framework to track
+the source of every cache miss and measure prefetch usefulness across
+the system.</li>
+<li>Codebase: <a href="https://github.com/pickle-device">GitHub</a></li>
+<li>Preprint: <a href="https://arxiv.org/abs/2510.26944">arXiv</a>; a
+newer version is on the way.</li>
+</ul></li>
+<li><strong>[Pebble Prefetcher]</strong> Under development.</li>
+</ul>
+<hr />
+<h2 id="internships">Internships</h2>
+<ul>
+<li><strong>[Google]</strong>: I built a pre-RTL area estimation model
+for the <a href="https://github.com/google/xls">XLS project</a> in
+summer 2024, and worked on Borglet’s CPU scheduling problem in the
+summer 2025. The area model is useful enough for optimizing the area of
+certain designs.</li>
+<li><strong>[AMD Research]</strong>: I built the Choreographer framework
+in summer 2023.</li>
 </ul>
 <hr />
 <h2 id="teaching">Teaching</h2>
@@ -122,18 +150,6 @@ Davis (Winter 2022 &amp; 2023).</li>
 2019).</li>
 <li>Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter
 2019).</li>
-</ul>
-<hr />
-<h2 id="internships">Internships</h2>
-<ul>
-<li><strong>[Google]</strong>: I built a pre-RTL area estimation model
-for the <a href="https://github.com/google/xls">XLS project</a> in the
-Summer of 2024, and worked on Borglet’s CPU scheduling problem in the
-Summer of 2025. The area model is useful enough for optimizing the area
-of certain designs ;).</li>
-<li><strong>[AMD Research]</strong>: I built the software/hardware stack
-for a last-level cache prefetcher (the Pickle prefetcher) in the Summer
-of 2023.</li>
 </ul>
 <hr />
 <h2 id="previous-works">Previous Works</h2>
@@ -179,6 +195,6 @@ href="https://github.com/riscv-software-src/opensbi">OpenSBI</a></li>
 <li><a href="https://github.com/YosysHQ/yosys">Yosys</a></li>
 </ul>
 <hr />
-Updated: Sept 23rd, 2025
+Updated: Apr 18th, 2026
 </body>
 </html>
