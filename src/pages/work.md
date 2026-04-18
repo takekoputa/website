@@ -9,10 +9,7 @@ title: Hoa Nguyen
 **LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a fifth-year PhD student at UC Davis, working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on rethinking data prefetching through the lens of hardware/software co-design, building systems that interweave the **flexibility** of software prefetching with the **efficiency** of specialized hardware.
-
-In our paradigm, the software provides prefetch kernels, which generate prefetch requests that are handled by the hardware to deliver timely prefetches.
-As the kernels are real code rather than inferred patterns, they can prefetch for hash-indexed lookups, predicated traversals, and other accesses that have long resisted hardware prefetchers, a direction the field's decades-long focus on pattern recognition has left underexplored.
+I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on rethinking data prefetching through the lens of hardware/software co-design, building systems that interweave the flexibility of software prefetching with the efficiency of specialized hardware.
 **To put it differently: this is how a software engineer would build a data prefetcher.**
 
 I have an extensive background in hardware architecture and software development.
@@ -20,23 +17,28 @@ I've contributed to [gem5](https://github.com/gem5/gem5) for 6 years at UC Davis
 
 I'll be returning to Google for another internship in summer 2026.
 
+**Research Interests:** I started my PhD thinking about the inevitable **address translation** bottlenecks in **scatter/gather** operations of **vector architectures**.
+At some point, I realized this has always been a **data prefetching** problem.
+This led to Pickle, a prefetcher for irregular memory accesses.
+
 ---
 
 ## Research
 
-My research work involves building the right tools for modeling hardware and writing software for new hardware.
+My research builds tools for hardware modeling and finds the right interface between hardware and software.
 
-- **[Pickle Prefetcher]** I drive the development of Pickle, a last-level cache prefetcher for irregular memory accesses, in collaboration with AMD Research.
-Instead of inferring patterns, Pickle executes programmer-supplied prefetch kernels on programmable compute at the LLC, with hardware managing the resulting prefetches.
+- **[Pickle Prefetcher]** I lead the development of Pickle, a last-level cache prefetcher for irregular memory accesses, in collaboration with AMD Research.
+In our paradigm, the software provides prefetch kernels, which generate prefetch requests that are handled by the hardware to deliver timely prefetches.
+As the kernels are real code rather than inferred patterns, they can prefetch for hash-indexed lookups, predicated traversals, and other accesses that have long resisted hardware prefetchers, a direction the field's decades-long focus on pattern recognition has left underexplored.
 On graph analytics workloads, Pickle delivers significant speedups at only 2% DRAM traffic overhead.
   - Preprint: [arXiv](https://arxiv.org/abs/2511.19973); a newer version is under review.
   - Trivia:
     - This project is named after my first cat, Pickle. She loves to play fetch, tends to take off before I throw the ball (*prefetching*), and ignores the bad throws (*conditional prefetching*).
-    - This [paper](https://research.google/pubs/limoncello-prefetchers-for-scale/) and this [paper](https://research.google/pubs/classifying-memory-access-patterns-for-prefetching/) convinced me that inaccurate prefetches accumulate at scale, and focusing on prefetch accuracy and prefetch timeliness is the right approach.
+    - The [Limoncello](https://research.google/pubs/limoncello-prefetchers-for-scale/) paper and the [Classifying Memory Access Patterns for Prefetching](https://research.google/pubs/classifying-memory-access-patterns-for-prefetching/) paper convinced me that inaccurate prefetches accumulate at scale, and focusing on prefetch accuracy and prefetch timeliness is the right approach.
 
 - **[Choreographer]** I drive the development of Choreographer, a gem5-based framework enabling hardware/software co-design for near-cache accelerators, in collaboration with AMD Research.
 Because these accelerators touch every layer of the hardware/software stack, evaluating them demands full-system visibility.
-Choreographer provides exactly that: a cluster of out-of-order CPUs, a chiplet-based on-chip network with a fully detailed MOESI coherence protocol using gem5's CHI, and the complete software stack, all running in full-system simulation.
+Choreographer provides exactly that: it models the accelerator alongside a cluster of high-performance out-of-order CPUs, a chiplet-based on-chip network with a fully detailed MOESI coherence protocol via gem5's CHI, and the complete software stack, all in full-system simulation.
   - Pickle is built on Choreographer. I extend the framework to track the source of every cache miss and measure prefetch usefulness across the system.
   - Codebase: [GitHub](https://github.com/pickle-device)
   - Preprint: [arXiv](https://arxiv.org/abs/2510.26944); a newer version is on the way.
@@ -47,16 +49,17 @@ Choreographer provides exactly that: a cluster of out-of-order CPUs, a chiplet-b
 
 ## Internships
 
-- **[Google]**: I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls) in summer 2024, and worked on Borglet's CPU scheduling problem in the summer 2025.
-The area model is useful enough for optimizing the area of certain designs.
-- **[AMD Research]**: I built the Choreographer framework in summer 2023.
+- **[Google]**:
+  - Summer 2024 — I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls). The area model is used to guide pre-RTL optimizations of certain designs.
+  - Summer 2025 — I profiled and analyzed Borglet's CPU scheduling on AMD chips.
+- **[AMD Research]**: Summer 2023 — I built the Choreographer framework.
 
 ---
 
 ## Teaching
 
 I strongly believe that student engagement in classroom/research comes from understanding the nature of the problem, and from the [**fluency**](https://nautil.us/how-i-rewired-my-brain-to-become-fluent-in-math-235085/) of using tools (e.g., using software, using learned facts, and using learned abstractions) for problem-solving.
-As an extensive user of coding agents (Copilot, Gemini, and Claude), I strongly believe that the understanding the problem and the fluency are even more important in the AI/LLM era as these factors help students **formulate the right questions** to the AI.
+As an extensive user of coding agents (Copilot, Gemini, and Claude), I strongly believe that the understanding of the problem and the fluency are even more important in the AI/LLM era as these factors help students **formulate the right questions** to the AI.
 
 - Bootcamp Instructor, gem5 Bootcamp, UC Davis (Summer 2022).
 - Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC Davis (Winter 2022 & 2023).
