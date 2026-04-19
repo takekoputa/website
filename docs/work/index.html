@@ -48,7 +48,7 @@
 <strong>GitHub:</strong> <a
 href="https://github.com/hnpl">github.com/hnpl</a><br />
 <strong>LinkedIn:</strong> <a
-href="https://www.linkedin.com/in/hnpl">www.linkedin.com/in/hnpl</a><br />
+href="https://www.linkedin.com/in/hnpl">linkedin.com/in/hnpl</a><br />
 <strong>GoogleScholar:</strong> <a
 href="https://scholar.google.com/citations?user=g6KC_pUAAAAJ">scholar.google.com/citations?user=g6KC_pUAAAAJ</a></p>
 <p>I’m a fifth-year PhD student at UC Davis (graduating December 2026),
@@ -70,27 +70,30 @@ and as a researcher at AMD.</p>
 the inevitable <strong>address translation</strong> bottlenecks in
 <strong>scatter/gather</strong> operations of <strong>vector
 architectures</strong>. At some point, I realized this has always been a
-<strong>data prefetching</strong> problem. This led to Pickle, a data
-prefetcher for irregular memory accesses.</p>
+<strong>data prefetching</strong> problem. This led to <a
+href="#pickle">Pickle</a>, a data prefetcher for irregular memory
+accesses.</p>
 <hr />
 <h2 id="research">Research</h2>
 <p>My research builds tools for hardware modeling and finds the right
 interface between hardware and software.</p>
 <ul>
-<li><strong>[Pickle Prefetcher]</strong> I lead the development of
-Pickle, a last-level cache prefetcher for irregular memory accesses, in
-collaboration with AMD Research. In our paradigm, the software provides
-prefetch kernels, which generate prefetch requests that are handled by
-the hardware to deliver timely prefetches. As the kernels are real code
-rather than inferred patterns, they can prefetch for hash-indexed
-lookups, predicated traversals, and other accesses that have long
-resisted hardware prefetchers, a direction the field’s decades-long
-focus on pattern recognition has left underexplored. On graph analytics
-workloads, Pickle delivers significant speedups at only 2% DRAM traffic
-overhead.
+<li><a id="pickle"></a> <strong>[Pickle Prefetcher]</strong> I lead the
+development of Pickle, a last-level cache prefetcher for irregular
+memory accesses, in collaboration with AMD Research. In our paradigm,
+the software provides prefetch kernels, which generate prefetch requests
+that are handled by the hardware to deliver timely prefetches. As the
+kernels are real code rather than inferred patterns, they can prefetch
+for hash-indexed lookups, predicated traversals, and other accesses that
+have long resisted hardware prefetchers, a direction the field’s
+decades-long focus on pattern recognition has left underexplored. On
+graph analytics workloads, Pickle delivers significant speedups at only
+2% DRAM traffic overhead.
 <ul>
 <li>Preprint: <a href="https://arxiv.org/abs/2511.19973">arXiv</a>; a
 newer version is under review.</li>
+<li>Codebase: <a
+href="https://github.com/pickle-device/">GitHub</a></li>
 <li>Trivia:
 <ul>
 <li>This project is named after my first cat, Pickle. She loves to play
@@ -118,9 +121,9 @@ and the complete software stack, all in full-system simulation.
 <li>Pickle is built on Choreographer. I extend the framework to track
 the source of every cache miss and measure prefetch usefulness across
 the system.</li>
-<li>Codebase: <a href="https://github.com/pickle-device">GitHub</a></li>
 <li>Preprint: <a href="https://arxiv.org/abs/2510.26944">arXiv</a>; a
 newer version is on the way.</li>
+<li>Codebase: <a href="https://github.com/pickle-device">GitHub</a></li>
 </ul></li>
 <li><strong>[Pebble Prefetcher]</strong> Under development.</li>
 </ul>
@@ -138,6 +141,14 @@ AMD chips.</li>
 <li><strong>[AMD Research]</strong>: Summer 2023 — I built the
 Choreographer framework.</li>
 </ul>
+<hr />
+<h2 id="previous-work">Previous Work</h2>
+<p>As an undergrad in <a
+href="https://faculty.engineering.ucdavis.edu/davidson/">Prof. Ian
+Davidson</a>’s lab, I collaborated with Zilong Bai on graph-based
+unsupervised feature selection, which results in <a
+href="https://scholar.google.com/citations?view_op=view_citation&amp;citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C">a
+SIGKDD paper</a>.</p>
 <hr />
 <h2 id="teaching">Teaching</h2>
 <p>I strongly believe that student engagement in classroom/research
@@ -158,14 +169,6 @@ Davis (Winter 2022 &amp; 2023).</li>
 <li>Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter
 2019).</li>
 </ul>
-<hr />
-<h2 id="previous-works">Previous Works</h2>
-<p>I worked at <a
-href="https://faculty.engineering.ucdavis.edu/davidson/">Professor Ian
-Davidson</a>’s lab during my undergraduate study, during which I
-co-authored <a
-href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=g6KC_pUAAAAJ&amp;citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C">a
-SIGKDD paper</a>.</p>
 <hr />
 <h2 id="previous-projects">Previous Projects</h2>
 <p>As a simulator developer, I did a lot of “zero-to-one” projects,

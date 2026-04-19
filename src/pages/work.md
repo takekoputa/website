@@ -6,7 +6,7 @@ title: Hoa Nguyen
 
 **Email:** hoanguyen@ucdavis.edu\
 **GitHub:** [github.com/hnpl](https://github.com/hnpl)\
-**LinkedIn:** [www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
+**LinkedIn:** [linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
 I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on rethinking data prefetching through the lens of hardware/software co-design, building systems that interweave the flexibility of software prefetching with the efficiency of specialized hardware.
@@ -19,7 +19,7 @@ I'll be returning to Google for another internship in summer 2026.
 
 **Research Interests:** I started my PhD thinking about the inevitable **address translation** bottlenecks in **scatter/gather** operations of **vector architectures**.
 At some point, I realized this has always been a **data prefetching** problem.
-This led to Pickle, a data prefetcher for irregular memory accesses.
+This led to [Pickle](#pickle), a data prefetcher for irregular memory accesses.
 
 ---
 
@@ -27,11 +27,12 @@ This led to Pickle, a data prefetcher for irregular memory accesses.
 
 My research builds tools for hardware modeling and finds the right interface between hardware and software.
 
-- **[Pickle Prefetcher]** I lead the development of Pickle, a last-level cache prefetcher for irregular memory accesses, in collaboration with AMD Research.
+- <a id="pickle"></a> **[Pickle Prefetcher]** I lead the development of Pickle, a last-level cache prefetcher for irregular memory accesses, in collaboration with AMD Research.
 In our paradigm, the software provides prefetch kernels, which generate prefetch requests that are handled by the hardware to deliver timely prefetches.
 As the kernels are real code rather than inferred patterns, they can prefetch for hash-indexed lookups, predicated traversals, and other accesses that have long resisted hardware prefetchers, a direction the field's decades-long focus on pattern recognition has left underexplored.
 On graph analytics workloads, Pickle delivers significant speedups at only 2% DRAM traffic overhead.
   - Preprint: [arXiv](https://arxiv.org/abs/2511.19973); a newer version is under review.
+  - Codebase: [GitHub](https://github.com/pickle-device/)
   - Trivia:
     - This project is named after my first cat, Pickle. She loves to play fetch, tends to take off before I throw the ball *(prefetching)*, and ignores the bad throws *(conditional prefetching)*.
     - The [Limoncello](https://research.google/pubs/limoncello-prefetchers-for-scale/) paper and the [Classifying Memory Access Patterns for Prefetching](https://research.google/pubs/classifying-memory-access-patterns-for-prefetching/) paper convinced me that inaccurate prefetches accumulate at scale, and focusing on prefetch accuracy and prefetch timeliness is the right approach.
@@ -40,8 +41,8 @@ On graph analytics workloads, Pickle delivers significant speedups at only 2% DR
 Because these accelerators touch every layer of the hardware/software stack, evaluating them demands full-system visibility.
 Choreographer provides exactly that: it models the accelerator alongside a cluster of high-performance out-of-order CPUs, a chiplet-based on-chip network with a fully detailed MOESI coherence protocol via gem5's CHI, and the complete software stack, all in full-system simulation.
   - Pickle is built on Choreographer. I extend the framework to track the source of every cache miss and measure prefetch usefulness across the system.
-  - Codebase: [GitHub](https://github.com/pickle-device)
   - Preprint: [arXiv](https://arxiv.org/abs/2510.26944); a newer version is on the way.
+  - Codebase: [GitHub](https://github.com/pickle-device)
 
 - **[Pebble Prefetcher]** Under development.
 
@@ -56,6 +57,12 @@ Choreographer provides exactly that: it models the accelerator alongside a clust
 
 ---
 
+## Previous Work
+
+As an undergrad in [Prof. Ian Davidson](https://faculty.engineering.ucdavis.edu/davidson/)'s lab, I collaborated with Zilong Bai on graph-based unsupervised feature selection, which results in [a SIGKDD paper](https://scholar.google.com/citations?view_op=view_citation&citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C).
+
+---
+
 ## Teaching
 
 I strongly believe that student engagement in classroom/research comes from understanding the nature of the problem, and from the [**fluency**](https://nautil.us/how-i-rewired-my-brain-to-become-fluent-in-math-235085/) of using tools (e.g., using software, using learned facts, and using learned abstractions) for problem-solving.
@@ -65,12 +72,6 @@ As an extensive user of coding agents (Copilot, Gemini, and Claude), I strongly 
 - Teaching Assistant, Computer Architectures (ECS 154B/ECS 201A), UC Davis (Winter 2022 & 2023).
 - Teaching Assistant, Optimization (MAT 168), UC Davis (Spring 2019).
 - Teaching Assistant, Abstract Mathematics (MAT 108), UC Davis (Winter 2019).
-
----
-
-## Previous Works
-
-I worked at [Professor Ian Davidson](https://faculty.engineering.ucdavis.edu/davidson/)'s lab during my undergraduate study, during which I co-authored [a SIGKDD paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=g6KC_pUAAAAJ&citation_for_view=g6KC_pUAAAAJ:u5HHmVD_uO8C).
 
 ---
 
