@@ -5,21 +5,21 @@ title: Hoa Nguyen
 # Hi, I'm Hoa Nguyen.
 
 **Email:** hoanguyen@ucdavis.edu\
-**GitHub:** [https://github.com/hnpl](https://github.com/hnpl)\
-**LinkedIn:** [https://www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
-**GoogleScholar:** [https://scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
+**GitHub:** [github.com/hnpl](https://github.com/hnpl)\
+**LinkedIn:** [www.linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
+**GoogleScholar:** [scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
 I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on rethinking data prefetching through the lens of hardware/software co-design, building systems that interweave the flexibility of software prefetching with the efficiency of specialized hardware.
 **To put it differently: this is how a software engineer would build a data prefetcher.**
 
 I have an extensive background in hardware architecture and software development.
-I've contributed to [gem5](https://github.com/gem5/gem5) for 6 years at UC Davis, and during my PhD I've interned as a software engineer at Google and as a researcher at AMD.
+I've contributed to the [gem5 simulator](https://github.com/gem5/gem5) for 6 years at UC Davis, and during my PhD I've interned as a software engineer at Google and as a researcher at AMD.
 
 I'll be returning to Google for another internship in summer 2026.
 
 **Research Interests:** I started my PhD thinking about the inevitable **address translation** bottlenecks in **scatter/gather** operations of **vector architectures**.
 At some point, I realized this has always been a **data prefetching** problem.
-This led to Pickle, a prefetcher for irregular memory accesses.
+This led to Pickle, a data prefetcher for irregular memory accesses.
 
 ---
 
@@ -33,7 +33,7 @@ As the kernels are real code rather than inferred patterns, they can prefetch fo
 On graph analytics workloads, Pickle delivers significant speedups at only 2% DRAM traffic overhead.
   - Preprint: [arXiv](https://arxiv.org/abs/2511.19973); a newer version is under review.
   - Trivia:
-    - This project is named after my first cat, Pickle. She loves to play fetch, tends to take off before I throw the ball (*prefetching*), and ignores the bad throws (*conditional prefetching*).
+    - This project is named after my first cat, Pickle. She loves to play fetch, tends to take off before I throw the ball *(prefetching)*, and ignores the bad throws *(conditional prefetching)*.
     - The [Limoncello](https://research.google/pubs/limoncello-prefetchers-for-scale/) paper and the [Classifying Memory Access Patterns for Prefetching](https://research.google/pubs/classifying-memory-access-patterns-for-prefetching/) paper convinced me that inaccurate prefetches accumulate at scale, and focusing on prefetch accuracy and prefetch timeliness is the right approach.
 
 - **[Choreographer]** I drive the development of Choreographer, a gem5-based framework enabling hardware/software co-design for near-cache accelerators, in collaboration with AMD Research.
