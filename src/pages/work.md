@@ -10,7 +10,7 @@ title: Hoa Nguyen
 **GoogleScholar:** [scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
 I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on hardware/software co-designed data prefetchers that interweave the flexibility of software with the efficiency of specialized hardware: software decides what to prefetch and hardware carries it out.
-**To put it differently: this is how a software engineer would build a data prefetcher.**
+To put it differently: this is how a software engineer would build a data prefetcher.
 
 I have an extensive background in hardware architecture and software development.
 I've contributed to the [gem5 simulator](https://github.com/gem5/gem5) for 6 years at UC Davis, and I've interned at Google as a software engineer and at AMD as a researcher.
