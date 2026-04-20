@@ -22,11 +22,12 @@ h1, h2, h3, h4, h5
 
 a
 {
-    color: #cd960d;
+    /*color: #cd960d;*/
     /*color: #6293c0;*/
     /*color: #2089be;*/
     /*color: #39a6ea;*/
     /*color: #6db50f;*/
+    color: #daa51f;
     text-decoration: underline;
 }
 

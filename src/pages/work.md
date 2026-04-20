@@ -9,17 +9,15 @@ title: Hoa Nguyen
 **LinkedIn:** [linkedin.com/in/hnpl](https://www.linkedin.com/in/hnpl)\
 **GoogleScholar:** [scholar.google.com/citations?user=g6KC_pUAAAAJ](https://scholar.google.com/citations?user=g6KC_pUAAAAJ)
 
-I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on rethinking data prefetching through the lens of hardware/software co-design, building systems that interweave the flexibility of software prefetching with the efficiency of specialized hardware.
+I'm a fifth-year PhD student at UC Davis (graduating December 2026), working with [Professor Jason Lowe-Power](https://arch.cs.ucdavis.edu/people/jason-lowe-power) on hardware/software co-designed data prefetchers that interweave the flexibility of software with the efficiency of specialized hardware: software decides what to prefetch and hardware carries it out.
 **To put it differently: this is how a software engineer would build a data prefetcher.**
 
 I have an extensive background in hardware architecture and software development.
-I've contributed to the [gem5 simulator](https://github.com/gem5/gem5) for 6 years at UC Davis, and during my PhD I've interned as a software engineer at Google and as a researcher at AMD.
-
-I'll be returning to Google for another internship in summer 2026.
+I've contributed to the [gem5 simulator](https://github.com/gem5/gem5) for 6 years at UC Davis, and I've interned at Google as a software engineer and at AMD as a researcher.
 
 **Research Interests:** I started my PhD thinking about the inevitable **address translation** bottlenecks in **scatter/gather** operations of **vector architectures**.
-At some point, I realized this has always been a **data prefetching** problem.
-This led to [Pickle](#pickle), a data prefetcher for irregular memory accesses.
+After a few years, I realized this has always been a **data prefetching** problem.
+This led to [Pickle](#pickle), a **hardware/software co-design** data prefetcher for irregular memory accesses.
 
 ---
 
@@ -51,9 +49,10 @@ Choreographer provides exactly that: it models the accelerator alongside a clust
 ## Internships
 
 - **[Google]**:
-  - Summer 2024 — I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls). The area model is used to guide pre-RTL optimizations of certain designs.
-  - Summer 2025 — I profiled and analyzed Borglet's CPU scheduling on AMD chips.
-- **[AMD Research]**: Summer 2023 — I built the Choreographer framework.
+  - Summer 2026: TBD
+  - Summer 2025: I profiled and analyzed Borglet's CPU scheduling on AMD chips.
+  - Summer 2024: I built a pre-RTL area estimation model for the [XLS project](https://github.com/google/xls). The area model is used to guide pre-RTL optimizations of certain designs.
+- **[AMD Research]**: Summer 2023: I built the Choreographer framework.
 
 ---
 
